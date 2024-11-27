@@ -1,0 +1,15 @@
+/home/nazmul_313/Documents/Team-Quantum-Baibars/bin/Debug/net9.0/Team-Quantum-Baibars
+/home/nazmul_313/Documents/Team-Quantum-Baibars/bin/Debug/net9.0/Team-Quantum-Baibars.deps.json
+/home/nazmul_313/Documents/Team-Quantum-Baibars/bin/Debug/net9.0/Team-Quantum-Baibars.runtimeconfig.json
+/home/nazmul_313/Documents/Team-Quantum-Baibars/bin/Debug/net9.0/Team-Quantum-Baibars.dll
+/home/nazmul_313/Documents/Team-Quantum-Baibars/bin/Debug/net9.0/Team-Quantum-Baibars.pdb
+/home/nazmul_313/Documents/Team-Quantum-Baibars/obj/Debug/net9.0/Team-Quantum-Baibars.GeneratedMSBuildEditorConfig.editorconfig
+/home/nazmul_313/Documents/Team-Quantum-Baibars/obj/Debug/net9.0/Team-Quantum-Baibars.AssemblyInfoInputs.cache
+/home/nazmul_313/Documents/Team-Quantum-Baibars/obj/Debug/net9.0/Team-Quantum-Baibars.AssemblyInfo.cs
+/home/nazmul_313/Documents/Team-Quantum-Baibars/obj/Debug/net9.0/Team-Quantum-Baibars.csproj.CoreCompileInputs.cache
+/home/nazmul_313/Documents/Team-Quantum-Baibars/obj/Debug/net9.0/Team-Quantum-Baibars.sourcelink.json
+/home/nazmul_313/Documents/Team-Quantum-Baibars/obj/Debug/net9.0/Team-Quantum-Baibars.dll
+/home/nazmul_313/Documents/Team-Quantum-Baibars/obj/Debug/net9.0/refint/Team-Quantum-Baibars.dll
+/home/nazmul_313/Documents/Team-Quantum-Baibars/obj/Debug/net9.0/Team-Quantum-Baibars.pdb
+/home/nazmul_313/Documents/Team-Quantum-Baibars/obj/Debug/net9.0/Team-Quantum-Baibars.genruntimeconfig.cache
+/home/nazmul_313/Documents/Team-Quantum-Baibars/obj/Debug/net9.0/ref/Team-Quantum-Baibars.dll
