@@ -1,2 +1,6 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿public class Customer
+{
+    public string Name { get; set; }
+    public string PhoneNumber { get; set; }
+    public string Role { get; set; } = "customer"; // Default role is "customer"
+}
