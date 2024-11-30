@@ -1,6 +1,9 @@
-﻿public class Customer
+public class Order
 {
-    public string Name { get; set; }
+    public string CustomerName { get; set; }
     public string PhoneNumber { get; set; }
-    public string Role { get; set; } = "customer"; // Default role is "customer"
+    public List<MenuItem> OrderedItems { get; set; }
+    public decimal TotalAmount { get; set; }
+    public string AssignedEmployee { get; set; }
+    public DateTime OrderDate { get; set; }
 }
