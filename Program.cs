@@ -1,6 +1,8 @@
-﻿public class Customer
+﻿public class MenuItem
 {
+    public int Id { get; set; }
     public string Name { get; set; }
-    public string PhoneNumber { get; set; }
-    public string Role { get; set; } = "customer"; // Default role is "customer"
+    public decimal Price { get; set; }
+
+    public override string ToString() => $"{Name,-20} | ${Price:F2}";
 }
