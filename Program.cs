@@ -1,32 +1,61 @@
 ﻿using System;
 
-public class Employee
+public class Order
 {
-    public string Name { get; set; }
+    public string CustomerName { get; set; }
     public string PhoneNumber { get; set; }
-    public string EmployeeId { get; set; }
-    public string Position { get; set; }
+    public List<MenuItem> OrderedItems { get; set; }
+    public decimal TotalAmount { get; set; }
+    public string AssignedEmployee { get; set; }
+    public DateTime OrderDate { get; set; }
 
-    private const string EmployeeFilePath = "employees.json";
-
-    public static List<Employee> LoadEmployees()
+    public static void PlaceOrder(Customer customer, List<MenuItem> orderedItems, List<Employee> employees)
     {
-        if (File.Exists(EmployeeFilePath))
+        if (employees.Count == 0)
         {
-            var employeeJson = File.ReadAllText(EmployeeFilePath);
-            return JsonSerializer.Deserialize<List<Employee>>(employeeJson) ?? new List<Employee>();
+            Console.WriteLine("No employees available to assign the order.");
+            return;
         }
-        return new List<Employee>();
+
+        var totalAmount = orderedItems.Sum(item => item.Price);
+        var assignedEmployee = employees[new Random().Next(employees.Count)];
+
+        var order = new Order
+        {
+            CustomerName = customer.Name,
+            PhoneNumber = customer.PhoneNumber,
+            OrderedItems = orderedItems,
+            TotalAmount = totalAmount,
+            AssignedEmployee = assignedEmployee.Name,
+            OrderDate = DateTime.Now
+        };
+
+        ShowOrderReport(order);
     }
 
-    public static void SaveEmployees(List<Employee> employees)
+    public static void ShowOrderReport(Order order)
     {
-        var employeeJson = JsonSerializer.Serialize(employees, new JsonSerializerOptions { WriteIndented = true });
-        File.WriteAllText(EmployeeFilePath, employeeJson);
-    }
+        Console.WriteLine("========== Order Report ==========");
+        Console.WriteLine($"Customer: {order.CustomerName} | Phone: {order.PhoneNumber}");
+        Console.ForegroundColor = ConsoleColor.Magenta;
+        Console.WriteLine($"Assigned Employee: {order.AssignedEmployee}");
+        Console.ResetColor();
+        Console.WriteLine("{0,-5} {1,-20} | {2,8}", "ID", "Menu Item", "Price");
+        Console.WriteLine(new string('-', 50));
 
-    public override string ToString()
-    {
-        return $"Employee Name: {Name}, ID: {EmployeeId}, Position: {Position}, Phone: {PhoneNumber}";
+        decimal totalAmount = 0;
+        int itemIndex = 1;
+
+        foreach (var item in order.OrderedItems)
+        {
+            totalAmount += item.Price;
+            Console.WriteLine($"{itemIndex++,-5} {item.Name,-20} | {item.Price,8:F2}");
+        }
+
+        Console.WriteLine(new string('-', 50));
+        Console.ForegroundColor = ConsoleColor.Yellow;
+        Console.WriteLine($"Total Amount: ${totalAmount:F2}");
+        Console.ResetColor();
+        Console.WriteLine(new string('-', 50));
     }
 }
