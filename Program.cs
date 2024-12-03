@@ -1,14 +1,32 @@
-﻿
+﻿using System;
 
-using System;
-
-namespace Team_Quantum_Baibars
+public class Employee
 {
-    class Program
+    public string Name { get; set; }
+    public string PhoneNumber { get; set; }
+    public string EmployeeId { get; set; }
+    public string Position { get; set; }
+
+    private const string EmployeeFilePath = "employees.json";
+
+    public static List<Employee> LoadEmployees()
     {
-        static void Main(string[] args)
+        if (File.Exists(EmployeeFilePath))
         {
-            Console.WriteLine("Hello World!");
+            var employeeJson = File.ReadAllText(EmployeeFilePath);
+            return JsonSerializer.Deserialize<List<Employee>>(employeeJson) ?? new List<Employee>();
         }
+        return new List<Employee>();
+    }
+
+    public static void SaveEmployees(List<Employee> employees)
+    {
+        var employeeJson = JsonSerializer.Serialize(employees, new JsonSerializerOptions { WriteIndented = true });
+        File.WriteAllText(EmployeeFilePath, employeeJson);
+    }
+
+    public override string ToString()
+    {
+        return $"Employee Name: {Name}, ID: {EmployeeId}, Position: {Position}, Phone: {PhoneNumber}";
     }
 }
