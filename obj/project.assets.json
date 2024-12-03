@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/nazmul_313/Documents/Team-Quantum-Baibars/Team-Quantum-Baibars.csproj",
+      "projectUniqueName": "/home/nazmul_313/Documents/OOP-Project-Team-Quantum-Baibars/Team-Quantum-Baibars.csproj",
       "projectName": "Team-Quantum-Baibars",
-      "projectPath": "/home/nazmul_313/Documents/Team-Quantum-Baibars/Team-Quantum-Baibars.csproj",
+      "projectPath": "/home/nazmul_313/Documents/OOP-Project-Team-Quantum-Baibars/Team-Quantum-Baibars.csproj",
       "packagesPath": "/home/nazmul_313/.nuget/packages/",
-      "outputPath": "/home/nazmul_313/Documents/Team-Quantum-Baibars/obj/",
+      "outputPath": "/home/nazmul_313/Documents/OOP-Project-Team-Quantum-Baibars/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/nazmul_313/.nuget/NuGet/NuGet.Config"

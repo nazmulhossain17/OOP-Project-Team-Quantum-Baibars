@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Team-Quantum-Baibars")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6bb1d97d38a96a50cc6e731f5d780a903a8a22de")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+28232520a6ef5645769c0da249a1ca8df1a7869f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Team-Quantum-Baibars")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Team-Quantum-Baibars")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
