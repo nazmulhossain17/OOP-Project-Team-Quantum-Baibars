@@ -22,5 +22,29 @@
     "PhoneNumber": "5566778899",
     "EmployeeId": "E004",
     "Position": "Waitress"
+  },
+  {
+    "Name": "Ethan",
+    "PhoneNumber": "2233445566",
+    "EmployeeId": "E005",
+    "Position": "Bartender"
+  },
+  {
+    "Name": "Fiona",
+    "PhoneNumber": "7788990011",
+    "EmployeeId": "E006",
+    "Position": "Hostess"
+  },
+  {
+    "Name": "George",
+    "PhoneNumber": "3344556677",
+    "EmployeeId": "E007",
+    "Position": "Sous Chef"
+  },
+  {
+    "Name": "Hannah",
+    "PhoneNumber": "8899001122",
+    "EmployeeId": "E008",
+    "Position": "Cashier"
   }
 ]
