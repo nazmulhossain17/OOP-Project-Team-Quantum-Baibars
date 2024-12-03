@@ -10,11 +10,28 @@ This project is a Restaurant Management System, built with C# to manage customer
 - **Tamjid Hossain** - 2233081440
 
 ## Features
-- Display restaurant menu
-- Add and manage customers and employees
-- Place orders and calculate totals
-- Assign an employee to handle the order
-- Generate and display detailed order reports
+1. Customer Management
+   - Add new customers
+   - Store customer information (name, phone number)
+
+2. Menu Management
+   - Load and save menu items from/to a JSON file
+   - Display menu items in a formatted table
+
+3. Employee Management
+   - Load and save employee information from/to a JSON file
+   - Assign employees to orders randomly
+
+4. Order Processing
+   - Allow customers to select menu items and specify quantities
+   - Calculate total order amount
+   - Generate and display order reports
+
+5. Restaurant Operations
+   - Initialize restaurant with menu and employees
+   - Add new menu items
+   - Add new employees
+   - Place orders
 
 ## Class Descriptions
 
@@ -45,11 +62,20 @@ This project is a Restaurant Management System, built with C# to manage customer
    - It then displays the menu, allows the user to select items and quantities, calculates the total amount, and asks for confirmation to place the order. 
    - If the order is confirmed, it calls the `PlaceOrder` method of the restaurant.
 
+## How to Use
 
-## Branching Strategy
-We follow a Git workflow with the following branches:
-- **main**: The primary branch containing stable code.
-- **feature-branches**: Each team member works on their own feature branch (e.g., `feature/add-order`, `feature/menu-display`), and changes are merged into `main` after review.
+1. Run the program.
+2. Enter your name and phone number when prompted.
+3. View the displayed menu.
+4. Enter the IDs of items you want to order, separated by commas.
+5. Specify the quantity for each item.
+6. Review the total amount and confirm the order.
+7. If confirmed, an order report will be generated and displayed.
+
+## Data Persistence
+
+- Menu items are stored in `menu.json`
+- Employee information is stored in `employees.json`
 
 ## Getting Started
 
