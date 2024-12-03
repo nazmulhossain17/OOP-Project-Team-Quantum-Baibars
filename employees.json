@@ -1,0 +1,26 @@
+[
+  {
+    "Name": "Alice",
+    "PhoneNumber": "1234567890",
+    "EmployeeId": "E001",
+    "Position": "Manager"
+  },
+  {
+    "Name": "Bob",
+    "PhoneNumber": "0987654321",
+    "EmployeeId": "E002",
+    "Position": "Waiter"
+  },
+  {
+    "Name": "Charlie",
+    "PhoneNumber": "1122334455",
+    "EmployeeId": "E003",
+    "Position": "Chef"
+  },
+  {
+    "Name": "Diana",
+    "PhoneNumber": "5566778899",
+    "EmployeeId": "E004",
+    "Position": "Waitress"
+  }
+]

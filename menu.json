@@ -1,0 +1,12 @@
+[
+  { "Id": 1, "Name": "🍕 Pizza", "Price": 10.99 },
+  { "Id": 2, "Name": "🍔 Burger", "Price": 5.99 },
+  { "Id": 3, "Name": "🍝 Pasta", "Price": 7.99 },
+  { "Id": 4, "Name": "🥗 Caesar Salad", "Price": 6.99 },
+  { "Id": 5, "Name": "🍗 Chicken Wings", "Price": 8.99 },
+  { "Id": 6, "Name": "🐟 Fish and Chips", "Price": 11.99 },
+  { "Id": 7, "Name": "🌯 Veggie Wrap", "Price": 7.49 },
+  { "Id": 8, "Name": "🥩 Steak", "Price": 15.99 },
+  { "Id": 9, "Name": "🍣 Sushi Roll", "Price": 9.99 },
+  { "Id": 10, "Name": "🍨 Ice Cream Sundae", "Price": 4.99 }
+]
